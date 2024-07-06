@@ -16,9 +16,8 @@ export default function Home() {
         <Banner />
         <Summary />
         <About />
-
-        <CallToAction />
-        {/* <Programs /> */}
+        <Programs />
+        {/* <CallToAction /> */}
       </main>
       {/* <Footer /> */}
     </>
