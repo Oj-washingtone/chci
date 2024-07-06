@@ -6,6 +6,7 @@ import Banner from "@/components/Banner";
 import Programs from "@/components/Programs";
 import Summary from "@/components/Summary";
 import CallToAction from "@/components/CallToAction";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       <Header />
       <main>
         <Banner />
-        <Summary />
+        {/* <Summary /> */}
+        <About />
+
         <CallToAction />
         {/* <Programs /> */}
       </main>
