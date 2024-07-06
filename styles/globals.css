@@ -255,7 +255,8 @@ h6 {
 }
 
 .section {
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .section-title {
@@ -319,3 +320,8 @@ h6 {
 
 #A8F589
  */
+
+/* About */
+.about-wrapper {
+  background-color: var(--primary-color);
+}
