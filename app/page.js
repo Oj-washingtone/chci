@@ -2,10 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Banner from "@/components/Banner";
-import Programs from "@/components/Programs";
-import Summary from "@/components/Summary";
-import CallToAction from "@/components/CallToAction";
+import Banner from "@/components/banner/Banner";
 import About from "@/components/About";
 
 export default function Home() {
@@ -14,12 +11,9 @@ export default function Home() {
       <Header />
       <main>
         <Banner />
-        <Summary />
         <About />
-        <Programs />
-        {/* <CallToAction /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

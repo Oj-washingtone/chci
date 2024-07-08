@@ -2,25 +2,24 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about-wrapper section ">
+    <div className="about-wrapper">
       <div className="container">
-        {/* Two columns */}
         <div className="row">
           <div className="col-md-6">
-            <h2>About Us</h2>
-            <p>
-              Our mission is to provide the best possible experience for our
-              customers. We strive to provide the best service and the best
-              products to our customers. We are committed to providing the best
-              possible experience for our customers.
-            </p>
-
-            <button className="__btn __btn_secondary">Learn More</button>
+            <img src="/images/about.jpg" alt="About Us" />
           </div>
           <div className="col-md-6">
-            <div className="about-image-wrapper">
-              <img src="images/b1.jpg" alt="About us" />
-            </div>
+            <h1>About Us</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tristique, purus eget tristique fermentum, sem eros bibendum
+              tortor, nec dapibus felis augue nec odio. Sed nec quam sed nunc
+              fermentum ultricies. Nullam auctor, sapien nec convallis
+              consectetur, nunc libero luctus mi, vel lacinia metus nunc vel
+              turpis. Sed nec quam sed nunc fermentum ultricies. Nullam auctor,
+              sapien nec convallis consectetur, nunc libero luctus mi, vel
+              lacinia metus nunc vel turpis.
+            </p>
           </div>
         </div>
       </div>
