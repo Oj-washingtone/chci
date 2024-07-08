@@ -30,6 +30,23 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+}
+
 /* 
 #48EBB0
 #00DBD6
@@ -38,6 +55,8 @@ body {
 #A8F589
  */
 
+/* Header */
+
 /* Banner */
 
 .banner-wrapper {
@@ -45,7 +64,90 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #cef6ff;
+  position: relative;
+}
+
+.intro-statement-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-wrapper h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-wrapper p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.banner-wrapper .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.banner-wrapper .actions button {
+  margin: 0 10px;
+  border-radius: 20px;
 }
 
 /* About */
+
+.about-image-wrapper {
+  border-radius: 10px;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  padding: 0 20px;
+}
+
+.about-details-wrapper {
+  padding: 0 20px;
+}
+
+/* Buttons */
+.__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: transparent;
+}
+
+.__btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.__btn-primary:hover {
+  background-color: #00c6ed;
+}
+
+.__btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.__btn-secondary:hover {
+  background-color: #7f3f97;
+}

@@ -5,10 +5,10 @@ export default function About() {
     <div className="about-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <img src="/images/about.jpg" alt="About Us" />
+          <div className="col-md-6 about-image-wrapper">
+            <img src="/images/about1.jpg" alt="About Us" />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 about-details-wrapper">
             <h1>About Us</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed

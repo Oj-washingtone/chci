@@ -6,5 +6,135 @@
   z-index: 1000;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   background-color: #fff;
-  padding: 10px 0;
+  border-bottom: 1px solid #f2f3f5;
+}
+
+.header-top-stripe {
+  border-bottom: 1px solid #f2f3f5;
+  padding: 7px 0;
+  background-color: #cef6ff;
+  margin: 0 !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.header-top-stripe .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-socials a {
+  margin: 0 10px;
+  color: #333;
+}
+
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contact span {
+  margin: 0 10px;
+  color: #333;
+}
+
+.header-contact span i {
+  margin-right: 7px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav-wrapper .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0 20px;
+  /* font-size: 17px; */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.nav ul li a.active {
+  color: var(--primary-color);
+}
+
+.nav ul li a.active::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.nav ul li a.active:hover::after {
+  width: 100%;
+}
+
+.nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+.nav ul li a.active::after {
+  width: 100%;
+}
+
+.nav ul li a.active:hover::after {
+  width: 100%;
+}
+
+.header-wrapper .get-intouch {
+  border: transparent;
+  padding: 7px 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav .get-intouch:hover {
+  background-color: #00c6ed;
 }
