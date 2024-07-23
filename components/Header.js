@@ -34,7 +34,9 @@ export default function Header() {
         </div>
         <div className="container">
           <div className="nav-wrapper">
-            <div className="logo">logo</div>
+            <div className="logo">
+              <img src="/images/logo/logo.png" alt="logo" />
+            </div>
             <div className="nav">
               <ul>
                 <li>

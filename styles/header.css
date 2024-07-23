@@ -16,6 +16,7 @@
   margin: 0 !important;
   font-weight: 500;
   font-size: 14px;
+  display: none;
 }
 
 .header-top-stripe .container {
@@ -58,9 +59,11 @@
 }
 
 .nav-wrapper .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
+  width: 90px;
+}
+
+.nav-wrapper .logo img {
+  width: 100%;
 }
 
 .nav ul {

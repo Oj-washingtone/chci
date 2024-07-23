@@ -7,7 +7,7 @@ export default function Banner() {
       <div className="container">
         <div className="row">
           <div className="col-md-7 intro-statement-wrapper">
-            <h1>Changing Lives with Love</h1>
+            <h1>A Beacon of hope and love</h1>
             <p>
               Dedicated to uplifting widows, orphans, and youths through
               compassion and sustainable development.
