@@ -55,7 +55,7 @@ p {
 /* Banner */
 
 .banner-wrapper {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,12 +63,12 @@ p {
   /* background-color: var(--primary-color); */
   margin-top: 70px;
   margin-bottom: 60px;
-  /* background-image: url("/images/events/event2.jpg"); */
+  background-image: url("/images/events/event2.jpg");
   overflow: hidden;
   background-size: cover;
   background-position: center;
 }
-/* 
+
 .banner-wrapper::before {
   content: "";
   position: absolute;
@@ -78,7 +78,7 @@ p {
   height: 100%;
   background: rgba(0, 173, 238, 0.2);
   z-index: 1;
-} */
+}
 
 .intro-statement-wrapper {
   display: flex;
@@ -93,19 +93,12 @@ p {
 .banner-wrapper h1 {
   font-size: 4rem;
   font-weight: bold;
-  background-color: #333;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 
 .banner-wrapper p {
   font-size: 20px;
-  color: #333;
+  color: #fff;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -641,10 +634,6 @@ p {
 }
 
 @media (max-width: 999px) {
-  .banner-wrapper {
-    height: 80vh;
-  }
-
   .programs-image-wrapper {
     display: flex;
     flex-direction: row;
@@ -664,6 +653,9 @@ p {
 }
 
 @media (max-width: 767px) {
+  .banner-wrapper {
+    max-height: 50vh !important;
+  }
   .__title_show_large {
     display: none;
   }
