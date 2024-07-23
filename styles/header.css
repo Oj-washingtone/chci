@@ -16,7 +16,6 @@
   margin: 0 !important;
   font-weight: 500;
   font-size: 14px;
-  display: none;
 }
 
 .header-top-stripe .container {
@@ -140,4 +139,69 @@
 
 .nav .get-intouch:hover {
   background-color: #00c6ed;
+}
+
+.nav-toggler {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-top-stripe {
+    display: none;
+  }
+
+  .logo {
+    width: 50px !important;
+  }
+
+  .nav-large {
+    display: none;
+  }
+
+  .get-intouch {
+    display: none;
+  }
+
+  .nav-toggler {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: transparent;
+    display: block;
+  }
+
+  .nav-toggler i {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .nav-small {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-small ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-small ul li {
+    margin: 10px 0;
+  }
+
+  .nav-small ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
 }

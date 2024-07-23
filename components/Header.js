@@ -37,7 +37,7 @@ export default function Header() {
             <div className="logo">
               <img src="/images/logo/logo.png" alt="logo" />
             </div>
-            <div className="nav">
+            <div className="nav nav-large">
               <ul>
                 <li>
                   <a href="/" className="active">
@@ -48,19 +48,38 @@ export default function Header() {
                   <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="/services">Services</a>
+                  <a href="/services">Activities</a>
                 </li>
                 <li>
                   <a href="/gallery">Events</a>
-                </li>
-
-                <li>
-                  <a href="/gallery">Blog</a>
                 </li>
               </ul>
             </div>
 
             <button className="get-intouch">Get intouch</button>
+
+            <button className="nav-toggler">
+              <i className="bi bi-list"></i>
+            </button>
+          </div>
+
+          <div className="nav-small">
+            <ul>
+              <li>
+                <a href="/" className="active">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
+                <a href="/services">Activities</a>
+              </li>
+              <li>
+                <a href="/gallery">Events</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

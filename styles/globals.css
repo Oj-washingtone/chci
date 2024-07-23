@@ -60,16 +60,16 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   margin-top: 70px;
   margin-bottom: 60px;
-  background-image: url("/images/events/event2.jpg");
+  /* background-image: url("/images/events/event2.jpg"); */
   overflow: hidden;
   background-size: cover;
   background-position: center;
 }
 
-.banner-wrapper::before {
+/* .banner-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -78,7 +78,7 @@ p {
   height: 100%;
   background: rgba(0, 173, 238, 0.1);
   z-index: 1;
-}
+} */
 
 .intro-statement-wrapper {
   display: flex;
@@ -93,12 +93,12 @@ p {
 .banner-wrapper h1 {
   font-size: 4rem;
   font-weight: bold;
-  color: #fff;
+  color: #333;
 }
 
 .banner-wrapper p {
   font-size: 20px;
-  color: #fff;
+  color: #333;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -676,6 +676,7 @@ p {
 
   .__our_story_p {
     margin-top: 60px;
+    padding: 0 20px;
   }
 
   .section-header {
