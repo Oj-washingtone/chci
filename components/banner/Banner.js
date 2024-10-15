@@ -19,7 +19,6 @@ export default function Banner() {
             </div>
           </div>
           <div className="col-md-7">
-            {" "}
             <div className="banner-image-wrapper">
               <Image
                 src="/images/group-smiling-laughing-african-american-kids-with-happy-expression-png_1296627-5935.png"

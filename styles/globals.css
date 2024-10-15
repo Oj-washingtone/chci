@@ -60,6 +60,7 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
+  background: linear-gradient(120deg, #f0f4ff 50%, #ffe8ff 50%);
   /* background-color: var(--primary-color); */
   margin-top: 70px;
   margin-bottom: 60px;
@@ -113,6 +114,9 @@ p {
 }
 
 .banner-image-wrapper {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #ffe8ff;
   padding-left: 60px;
 }
 
@@ -397,6 +401,10 @@ p {
 }
 
 /* events */
+
+.event {
+  margin-bottom: 25px;
+}
 
 .event-date {
   background: #8e4f00;
@@ -780,6 +788,24 @@ p {
 }
 
 @media (max-width: 999px) {
+  .about-wrapper {
+    padding: 0;
+  }
+
+  .banner-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .banner-image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
   .programs-image-wrapper {
     display: flex;
     flex-direction: row;
@@ -799,6 +825,27 @@ p {
 }
 
 @media (max-width: 767px) {
+  .my-form-wrapper {
+    margin-top: 40px;
+  }
+
+  .intro-statement-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-statement-wrapper h1 {
+    text-align: center;
+    width: 90%;
+    font-size: 35px !important;
+  }
+
+  .intro-statement-wrapper p {
+    text-align: center;
+  }
+
   .banner-wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -841,14 +888,19 @@ p {
 
 /* Whatsapp FAB */
 .fab-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #25d366;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
+  /* padding: 10px; */
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   text-align: center;
