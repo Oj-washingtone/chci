@@ -19,10 +19,11 @@ export default function Events() {
                 <img src="/images/events/event1.jpg" alt="event" />
               </div>
               <div className="event-details">
-                <h4 className="event-title">Event Title</h4>
+                <h4 className="event-title">Tree Planting</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Join us as we come together to plant trees and promote
+                  environmental sustainability. Let's make a lasting impact by
+                  improving our community and contributing to a greener future!
                 </p>
               </div>
 
@@ -43,10 +44,12 @@ export default function Events() {
               </div>
 
               <div className="event-details">
-                <h4 className="event-title"> Event Title</h4>
+                <h4 className="event-title">Community Clean Up</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Help us beautify our community! Join our cleanup event to
+                  remove waste, improve public spaces, and promote a cleaner,
+                  healthier environment for everyone. Together, we can make a
+                  difference!
                 </p>
               </div>
 
@@ -67,10 +70,12 @@ export default function Events() {
                 <img src="/images/events/event3.jpg" alt="event" />
               </div>
               <div className="event-details">
-                <h4 className="event-title">Event Title</h4>
+                <h4 className="event-title">Tree Seedling Preparation</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Be part of our tree seedling preparation event! Join us as we
+                  prepare and nurture seedlings for future planting. Together,
+                  we can contribute to reforestation efforts and ensure a
+                  greener tomorrow.
                 </p>
               </div>
               <div className="event-footer">

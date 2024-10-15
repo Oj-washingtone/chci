@@ -31,8 +31,8 @@ export default function About() {
           </div>
           <div className="col-md-6 about-details-wrapper">
             <div className="about-section-header  __title_show_large">
-              <h1>
-                Our <span>Story</span>
+              <h1 className="about-title">
+                Our <span className="text-alt">Story</span>
               </h1>
             </div>
 

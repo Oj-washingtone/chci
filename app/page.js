@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import Subscribe from "@/components/Subscribe";
 import ContactUs from "@/components/ContactUs";
 import Gallery from "@/components/Gallery";
+import Fab from "@/components/FAB";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         {/* <ContactUs /> */}
         <Subscribe />
         {/* <Gallery /> */}
+        <Fab />
       </main>
       <Footer />
     </>

@@ -16,21 +16,21 @@ export default function Statistics() {
           </div>
           <div className="col-md-3">
             <div className="statistic">
-              <h2>1000+</h2>
-              <p>Children Supported</p>
+              <h2>10+</h2>
+              <p>Events Held</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="statistic">
-              <h2>1000+</h2>
-              <p>Children Supported</p>
+              <h2>500+</h2>
+              <p>Trees Planted</p>
             </div>
           </div>
 
           <div className="col-md-3">
             <div className="statistic">
-              <h2>1000+</h2>
-              <p>Children Supported</p>
+              <h2>10+</h2>
+              <p>Widows Supported</p>
             </div>
           </div>
         </div>

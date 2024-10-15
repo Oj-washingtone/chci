@@ -48,15 +48,24 @@ export default function Header() {
                   <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="/services">Activities</a>
+                  <a href="/services">Our Programs</a>
+                </li>
+                <li>
+                  <a href="/services">Get Involved</a>
+                </li>
+                <li>
+                  <a href="/services">Donate</a>
                 </li>
                 <li>
                   <a href="/gallery">Events</a>
                 </li>
+                <li>
+                  <a href="/faq">FAQs</a>
+                </li>
               </ul>
             </div>
 
-            <button className="get-intouch">Get intouch</button>
+            <button className="get-intouch">Contact us</button>
 
             <button className="nav-toggler">
               <i className="bi bi-list"></i>
@@ -77,7 +86,13 @@ export default function Header() {
                 <a href="/services">Activities</a>
               </li>
               <li>
+                <a href="/about">About</a>
+              </li>
+              <li>
                 <a href="/gallery">Events</a>
+              </li>
+              <li>
+                <a href="/faq">FAQs</a>
               </li>
             </ul>
           </div>
