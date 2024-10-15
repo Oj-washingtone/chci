@@ -841,33 +841,33 @@ p {
 
 /* Whatsapp FAB */
 .fab-button {
-  position: fixed; /* Fixes the button position */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  background-color: #25d366; /* WhatsApp green */
-  color: white; /* Text color */
-  border: none; /* No border */
-  padding: 10px 20px; /* Padding around the button */
-  border-radius: 50px; /* Circular button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  z-index: 1000; /* Ensure the button is on top */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline from link */
-  transition: background-color 0.3s; /* Smooth background change */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .fab-button button {
-  background-color: transparent; /* Transparent background for the button */
-  color: white; /* White text */
-  border: none; /* No border */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .fab-button button i {
-  font-size: 26px; /* Larger icon */
+  font-size: 26px;
 }
 
 .fab-button:hover {
-  background-color: #1ebea5; /* Darker green on hover */
+  background-color: #1ebea5;
 }
