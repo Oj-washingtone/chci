@@ -55,14 +55,14 @@ p {
 /* Banner */
 
 .banner-wrapper {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(120deg, #f0f4ff 50%, #ffe8ff 50%);
+  /* background: linear-gradient(120deg, #f0f4ff 50%, #ffe8ff 50%); */
   /* background-color: var(--primary-color); */
-  margin-top: 70px;
+  padding-top: 170px;
   margin-bottom: 60px;
   /* background-image: url("/images/events/event2.jpg"); */
   overflow: hidden;
@@ -116,7 +116,7 @@ p {
 .banner-image-wrapper {
   height: 100%;
   border-radius: 20px;
-  background-color: #ffe8ff;
+  /* background-color: #ffe8ff; */
   padding-left: 60px;
 }
 
@@ -131,7 +131,7 @@ p {
 
 .about-wrapper {
   margin-top: 100px;
-  background-color: #fff;
+  background-color: #e9fcff;
   padding: 60px;
 }
 
@@ -324,13 +324,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00dbd6;
+  /* background-color: #00dbd6; */
   padding: 40px;
   border-radius: 10px;
 }
 
 .mission {
-  background-color: #fff;
+  background-color: #e084bc;
 }
 
 .vision {
@@ -338,7 +338,7 @@ p {
 }
 
 .values {
-  background-color: #fff;
+  background-color: #7ef9c1;
 }
 
 /* Activities */

@@ -16,6 +16,8 @@ export default function Mission() {
             </div>
           </div>
 
+          {/* <div className="col-md-8"></div> */}
+
           <div className="col-md-4">
             <div className="vision-mission vision __card mv-section">
               <h2 className="mv-section-header ">Vission</h2>

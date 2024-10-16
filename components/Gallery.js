@@ -2,22 +2,28 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <div className="gallery wrapper">
+    <div className="section gallery-wrapper">
       <div className="container">
-        <div className="gallery-header">
-          <h1>Our Gallery</h1>
+        <div className="section-header">
+          <h3>
+            <span>Our photo</span> Gallery
+          </h3>
+          <p>
+            Support pur program by donating or Volunteerin. together lets make
+            our comunities better blaces
+          </p>
         </div>
 
-        <div className="gallery-images">
-          <div className="gallery-image gallery-image-1"></div>
-          <div className="gallery-image gallery-image-2"></div>
-          <div className="gallery-image gallery-image-3"></div>
-          <div className="gallery-image gallery-image-4"></div>
-          <div className="gallery-image gallery-image-5"></div>
-          <div className="gallery-image gallery-image-6"></div>
-          <div className="gallery-image gallery-image-7"></div>
-          <div className="gallery-image gallery-image-8"></div>
-          <div className="gallery-image gallery-image-9"></div>
+        <div className="row">
+          <div className=" col-md-4">col 1</div>
+          <div className=" col-md-4">
+            <div className="row">row 1</div>
+            <div className="row">row 2</div>
+          </div>
+          <div className=" col-md-4">
+            <div className="row">row 1</div>
+            <div className="row">row 2</div>
+          </div>
         </div>
       </div>
     </div>

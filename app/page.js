@@ -23,12 +23,12 @@ export default function Home() {
         <Mission />
         <Activities />
         <Statistics />
-        <Events />
-        <CallToAction />
         <Team />
+        <Events />
         {/* <ContactUs /> */}
         <Subscribe />
-        {/* <Gallery /> */}
+        <CallToAction />
+        <Gallery />
         <Fab />
       </main>
       <Footer />
