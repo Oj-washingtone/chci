@@ -304,7 +304,7 @@ p {
 }
 
 /* Mission vision */
-.mission-vision-wrapper {
+/* .mission-vision-wrapper {
   margin-bottom: 100px;
 }
 
@@ -318,27 +318,62 @@ p {
   font-size: 18px;
   font-weight: bold;
   color: var(--secondary-color);
+} */
+
+.mission-vision-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #1c1c1e;
+  color: #fff;
 }
 
 .mv-sections-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* background-color: #00dbd6; */
-  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.mv-image-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.mv-image.main-image {
+  width: 100%;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.mission {
-  background-color: #e084bc;
+.mv-image.sub-image {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 50%;
+  border-radius: 10px;
+  border: 4px solid #00adf2;
 }
 
-.vision {
-  background-color: #ffebcc;
+.mv-content-wrapper {
+  padding-left: 40px;
 }
 
-.values {
-  background-color: #7ef9c1;
+.mv-section {
+  margin-bottom: 30px;
+}
+
+.mv-section-header {
+  font-size: 23px;
+  font-weight: bold;
+  color: #00adf2;
+  margin-bottom: 15px;
+}
+
+.mv-description {
+  font-size: 14px;
+  color: #b8b8b8;
+  line-height: 1.6;
 }
 
 /* Activities */
@@ -475,10 +510,14 @@ p {
 }
 
 /* Team */
+.team-wrapper {
+  background-color: #f9f9f9;
+}
 .team-member {
-  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 10px;
   border-radius: 10px;
+  color: #fff !important;
 }
 
 .members-wrapper {
@@ -644,6 +683,20 @@ p {
   resize: none;
 }
 
+/* Gallery */
+.galerry-image {
+  width: 100%;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.galerry-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /* Footer */
 .footer-wrapper {
   background: #000;
@@ -750,26 +803,91 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 50px 0;
   background-color: var(--primary-color);
+  background-image: url("/images/events/event2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
+.statistics-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    173,
+    238,
+    0.6
+  ); /* Make overlay a bit darker for contrast */
+  z-index: 1;
+}
+
+/* Ensure content is above the overlay */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Elegant typography for header */
 .statistics-header {
   font-weight: bold;
   text-align: center;
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
+/* Statistic cards */
+.statistic {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Add a translucent white background to each card */
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.statistic:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Number styling */
 .statistic h2 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+.statistic p {
+  font-size: 18px;
+  font-weight: 500;
   color: #333;
 }
 
-.statistic p {
-  font-size: 16px;
-  color: #333;
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .statistic h2 {
+    font-size: 28px;
+  }
+
+  .statistic p {
+    font-size: 16px;
+  }
 }
 
 /* Call to action */
@@ -790,6 +908,7 @@ p {
 @media (max-width: 999px) {
   .about-wrapper {
     padding: 0;
+    padding-bottom: 60px;
   }
 
   .banner-image-wrapper {

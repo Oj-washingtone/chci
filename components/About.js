@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about-wrapper">
+    <div id="about" className="about-wrapper">
       <div className="container">
         <div className="about-section-header __title_show_small">
           <h1>

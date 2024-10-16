@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Footer from "@/components/Footer";
 import Banner from "@/components/banner/Banner";
 import About from "@/components/About";
 import Mission from "@/components/Mission";
@@ -31,7 +30,6 @@ export default function Home() {
         <Gallery />
         <Fab />
       </main>
-      <Footer />
     </>
   );
 }

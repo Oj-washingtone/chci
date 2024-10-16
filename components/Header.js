@@ -1,7 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "@/styles/header.css";
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const handleMenuItemClick = () => {
+    // Close the menu when a menu item is clicked
+    if (showMenu) {
+      setShowMenu(false);
+    }
+  };
+
   return (
     <header>
       <div className="header-wrapper">
@@ -37,64 +52,56 @@ export default function Header() {
             <div className="logo">
               <img src="/images/logo/logo.png" alt="logo" />
             </div>
-            <div className="nav nav-large">
+            <div className={`nav nav-large ${showMenu ? "open" : ""}`}>
               <ul>
                 <li>
-                  <a href="/" className="active">
+                  <a href="/" className="active" onClick={handleMenuItemClick}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about">About</a>
+                  <a href="/#about" onClick={handleMenuItemClick}>
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="/services">Our Programs</a>
+                  <a href="/#programs" onClick={handleMenuItemClick}>
+                    Our Programs
+                  </a>
                 </li>
                 <li>
-                  <a href="/services">Get Involved</a>
+                  <a href="/#" onClick={handleMenuItemClick}>
+                    Donate
+                  </a>
                 </li>
                 <li>
-                  <a href="/services">Donate</a>
+                  <a href="/#events" onClick={handleMenuItemClick}>
+                    Events
+                  </a>
                 </li>
                 <li>
-                  <a href="/gallery">Events</a>
+                  <a href="/#get-involved" onClick={handleMenuItemClick}>
+                    Get Involved
+                  </a>
                 </li>
                 <li>
-                  <a href="/faq">FAQs</a>
+                  <a href="/#gallery" onClick={handleMenuItemClick}>
+                    Gallery
+                  </a>
                 </li>
               </ul>
             </div>
 
             <button className="get-intouch">Contact us</button>
 
-            <button className="nav-toggler">
-              <i className="bi bi-list"></i>
-            </button>
-          </div>
-
-          <div className="nav-small">
-            <ul>
-              <li>
-                <a href="/" className="active">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <a href="/services">Activities</a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <a href="/gallery">Events</a>
-              </li>
-              <li>
-                <a href="/faq">FAQs</a>
-              </li>
-            </ul>
+            <div
+              className={`hamburger ${showMenu ? "ham-open" : ""}`}
+              onClick={toggleMenu}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Events() {
   return (
-    <div className="section events-wrapper">
+    <div id="events" className="section events-wrapper">
       <div className="container">
         <div className="section-header">
           <h3>

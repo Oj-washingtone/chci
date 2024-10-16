@@ -8,31 +8,19 @@ export default function Statistics() {
           We are dedicated to creating a lasting impact
         </h2>
         <div className="row impact-wrapper">
-          <div className="col-md-3">
-            <div className="statistic">
-              <h2>1000+</h2>
-              <p>Children Supported</p>
+          {[
+            { number: "1000+", label: "Children Supported" },
+            { number: "10+", label: "Events Held" },
+            { number: "500+", label: "Trees Planted" },
+            { number: "10+", label: "Widows Supported" },
+          ].map((stat, index) => (
+            <div key={index} className="col-md-3">
+              <div className="statistic">
+                <h2>{stat.number}</h2>
+                <p>{stat.label}</p>
+              </div>
             </div>
-          </div>
-          <div className="col-md-3">
-            <div className="statistic">
-              <h2>10+</h2>
-              <p>Events Held</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="statistic">
-              <h2>500+</h2>
-              <p>Trees Planted</p>
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className="statistic">
-              <h2>10+</h2>
-              <p>Widows Supported</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

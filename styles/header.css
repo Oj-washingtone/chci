@@ -51,9 +51,9 @@
 }
 
 .nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
   padding: 10px 0;
 }
 
@@ -149,6 +149,35 @@
   display: none;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+  justify-content: center !important; /* Vertically center the hamburger */
+  align-items: center !important;
+}
+
+.hamburger span {
+  height: 3px !important;
+  width: 22px !important;
+  background-color: #333 !important;
+  margin: 3px 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.hamburger.ham-open span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.ham-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.ham-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 @media (max-width: 768px) {
   .header-top-stripe {
     display: none;
@@ -158,8 +187,51 @@
     width: 50px !important;
   }
 
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    justify-content: center;
+  }
+
   .nav-large {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none !important;
+    animation: 5s ease-in-out;
+  }
+
+  .open {
+    display: block !important;
+  }
+
+  .nav-large ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-large .active {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .nav-large ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-large ul li a {
+    text-decoration: none !important;
+    color: #333;
+    font-weight: bold;
   }
 
   .get-intouch {
@@ -207,5 +279,13 @@
     text-decoration: none;
     color: #333;
     font-weight: bold;
+  }
+
+  .closed {
+    display: block;
+  }
+
+  .open {
+    display: block;
   }
 }

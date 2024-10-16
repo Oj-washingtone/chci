@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Subscribe() {
   return (
-    <div className="section surbscribe-section">
+    <div id="get-involved" className="section surbscribe-section">
       <div className="container">
         <div className="section-header get-involved-section-header">
           <h3>

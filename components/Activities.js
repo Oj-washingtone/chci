@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Activities() {
   return (
-    <div className="section activities-wrapper">
+    <div id="programs" className="section activities-wrapper">
       <div className="section-header">
         <h3>
           <span>Our</span> Programs
