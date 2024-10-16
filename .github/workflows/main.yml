@@ -1,0 +1,28 @@
+name: Deploy zuo server VM
+
+on:
+  push:
+    branches:
+      - main  # Change this to your target branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Deploy to Zuo Server
+      run: |
+        ssh -o StrictHostKeyChecking=no root@157.173.119.142 "mkdir -p ~/opt/zuo/chci"
+        scp -o StrictHostKeyChecking=no -r ./* root@157.173.119.142:~/opt/zuo/chci
+        ssh -o StrictHostKeyChecking=no root@157.173.119.142 " cd ~/opt/zuo/chci && ./start.sh "
+      env:
+        CONTABO_VM_USER: root
+        CONTABO_VM_IP: 157.173.119.142
